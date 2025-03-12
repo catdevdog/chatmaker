@@ -6,28 +6,28 @@
 
 ## 주요 기능
 
-1. **SNS 스타일 템플릿 선택**  
-   - 인스타그램, 카카오톡 등 다양한 UI 중 선택 가능  
+1. **SNS 스타일 템플릿 선택**
+   - 인스타그램, 카카오톡 등 다양한 UI 중 선택 가능
    - 텍스트, 이미지, 이모지 등 원하는 요소를 자유롭게 배치
-2. **순차적 대화 진행**  
-   - 클릭 시 다음 대화가 이어지는 톡툰/채팅형 스토리 구성  
+2. **순차적 대화 진행**
+   - 클릭 시 다음 대화가 이어지는 톡툰/채팅형 스토리 구성
    - 자연스러운 스토리텔링으로 숏폼 영상 제작에 최적화
-3. **실시간 미리보기**  
-   - 모바일 기기 비율에 맞춘 디자인으로 최종 결과물 확인  
+3. **실시간 미리보기**
+   - 모바일 기기 비율에 맞춘 디자인으로 최종 결과물 확인
    - 별도 장치 없이 화면 캡처 가이드 제공 (사진/동영상)
-4. **데이터 관리 및 통계**  
+4. **데이터 관리 및 통계**
    - 생성된 콘텐츠 수, 사진/영상 캡처 유형 등 통계
 
 ## 기술 스택
 
-- **프론트엔드**: Next.js (React) + TypeScript  
-- **UI**: Tailwind CSS + shadcn/ui  
+- **프론트엔드**: Next.js (React) + TypeScript
+- **UI**: Tailwind CSS + shadcn/ui
 - **백엔드/DB**: Firebase
 
 ## 프로젝트 구조 (예시)
 
 ```bash
-my-gramtalk-project
+my-chatmaker-project
 ├── pages/       # Next.js 페이지 라우팅
 ├── components/  # 재사용 가능한 React 컴포넌트
 ├── lib/         # 유틸 함수, API 호출 로직 등
@@ -41,8 +41,8 @@ my-gramtalk-project
 1. 리포지토리 클론:
 
 ```bash
-git clone https://github.com/your-username/gramtalk.git
-cd gramtalk
+git clone https://github.com/your-username/chatmaker.git
+cd chatmaker
 ```
 
 2. 패키지 설치:
@@ -64,6 +64,7 @@ npm run dev
 - 브라우저에서 `http://localhost:3000` 접속
 
 ## Firebase 연동 (예시)
+
 1. Firebase 콘솔에서 새 프로젝트 생성 후, 웹 앱 추가
 2. 프로젝트 루트에 `.env.local` 파일 생성, 다음 정보를 기입:
 
@@ -85,19 +86,23 @@ npm install firebase
 > **주의**: `.env.local`은 Git에 올리지 않도록 `.gitignore`에 추가되어야 합니다.
 
 ## 사용 방법
+
 1. **에디터 페이지**에서 SNS 템플릿 선택 → 텍스트/이미지 추가
 2. **미리보기**로 실시간 결과 확인
 3. **캡처 유형**(사진/동영상) 선택 후, 결과물 캡처 혹은 녹화
 
 ## 기여 가이드
+
 1. **Fork** 후 Pull Request 생성
 2. Issue나 Discussions를 통해 버그 제보, 기능 제안 환영
 3. 커밋 메시지는 **의미를 명확히** 적어주기 (예: fix, feat, refactor 등)
 
 ## 라이선스
+
 프로젝트는 [MIT License](https://opensource.org/licenses/MIT) 하에 배포됩니다. 자유롭게 포크하여 활용하되, 라이선스 전문과 저작권 고지를 포함해 주세요.
 
 ## 향후 확장 계획
+
 - 더 다양한 SNS 템플릿 추가(트위터, 페이스북 등)
 - AI를 활용한 대화내용 자동 생성
 - 영상 편집 및 배경음악 추가 기능 등 고도화
@@ -105,4 +110,3 @@ npm install firebase
 ---
 
 본 서비스는 간단한 아이디어를 빠르게 **숏폼 콘텐츠**로 구현할 수 있도록 돕는 **프로젝트**입니다. 궁금한 사항이나 피드백은 언제든지 이슈로 남겨주세요.
-
