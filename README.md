@@ -63,28 +63,6 @@ npm run dev
 
 - 브라우저에서 `http://localhost:3000` 접속
 
-## Firebase 연동 (예시)
-
-1. Firebase 콘솔에서 새 프로젝트 생성 후, 웹 앱 추가
-2. 프로젝트 루트에 `.env.local` 파일 생성, 다음 정보를 기입:
-
-```
-NEXT_PUBLIC_FIREBASE_API_KEY=...
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=...
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=...
-# ... 필요 정보 추가
-```
-
-3. Firebase SDK 설치 후 초기화:
-
-```bash
-yarn add firebase
-# 또는
-npm install firebase
-```
-
-> **주의**: `.env.local`은 Git에 올리지 않도록 `.gitignore`에 추가되어야 합니다.
-
 ## 사용 방법
 
 1. **에디터 페이지**에서 SNS 템플릿 선택 → 텍스트/이미지 추가
