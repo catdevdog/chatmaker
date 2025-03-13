@@ -1,10 +1,12 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
       <h1>Next.js + TypeScript</h1>
-      <Image src="/nextjs.png" alt="Next.js" width={200} height={200} />
+      <Button>Click me!</Button>
+      <Link href="/editor">editor</Link>
     </div>
   );
 }
