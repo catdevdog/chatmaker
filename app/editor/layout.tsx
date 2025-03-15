@@ -3,5 +3,5 @@ export default function EditorLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>{children}</div>;
+  return <div className="text-black h-full">{children}</div>;
 }
