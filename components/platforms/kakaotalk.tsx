@@ -33,23 +33,17 @@ function TalkContent() {
   );
 }
 
-function TalkBody() {
-  return (
-    <div>
-      <TalkNotice />
-      <div>
-        <TalkContent />
-        <TalkContent />
-      </div>
-    </div>
-  );
+function TalkBody({ children }: { children: React.ReactNode }) {
+  return <div>{children}</div>;
 }
 
-export default function KakaoTalk() {
-  return (
-    <div>
-      <TalkHeader />
-      <TalkBody />
-    </div>
-  );
+function KakaoTalk({ children }: { children: React.ReactNode }) {
+  return <div>{children}</div>;
 }
+
+KakaoTalk.Header = TalkHeader;
+KakaoTalk.Notice = TalkNotice;
+KakaoTalk.Content = TalkContent;
+KakaoTalk.Body = TalkBody;
+
+export default KakaoTalk;

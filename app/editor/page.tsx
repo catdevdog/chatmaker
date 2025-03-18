@@ -38,7 +38,20 @@ export default function Editor() {
       />
       <div>
         <h2>Preview</h2>
-        <div>{platform === "kakaotalk" ? <KakaoTalk /> : <Instagram />}</div>
+        <div>
+          {platform === "kakaotalk" ? (
+            <KakaoTalk>
+              <KakaoTalk.Header />
+              <KakaoTalk.Body>
+                <KakaoTalk.Notice />
+                <KakaoTalk.Content />
+                <KakaoTalk.Content />
+              </KakaoTalk.Body>
+            </KakaoTalk>
+          ) : (
+            <Instagram />
+          )}
+        </div>
       </div>
     </div>
   );
